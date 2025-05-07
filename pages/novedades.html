@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Servicios</title>
+<!-- CSS -->
+<link rel="stylesheet" href="../css/style.css">
+<script>
+    function toggleTexto() {
+        const modal = document.getElementById('modalFondo');
+        modal.style.display = (modal.style.display === 'flex') ? 'none' : 'flex';
+    }
+    
+    // Cierra el modal si se hace clic afuera del cuadro
+    function cerrarSiClickAfuera(event) {
+        if (event.target.id === 'modalFondo') {
+            toggleTexto();
+        }
+    }
+    </script>
+    
+    
+</head>
+<body class="pagina-novedades">
+
+    <header>
+        <nav>
+        <ul>
+            <li><a href="/index.html">Inicio</a></li>
+            <li><a href="nuestra-historia.html">Nuestra Historia</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li>
+                <a href="/index.html">
+                <img src="/assets/image/logo_galletitas.png" alt="Logo Galletitas Goldmundo" width="200">
+                </a>
+            </li>
+            <li><a href="#">Novedades</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li>
+                <a href="https://www.instagram.com/galletitasgoldmundo/">
+                <img src="/assets/image/logo_instagram.png" alt="Logo Instagram" width="50">
+                </a>
+            </li>
+        </ul>
+        </nav>
+    </header>
+
+<main>
+    <h3>PROBAR, DISFRUTAR Y COMPARTIR</h3>
+    <p class="novedades-texto">
+        Historias, novedades y momentos compartidos con nuestras galletitas
+    </p>
+    <div class="imagenes-productos">
+    <img src="../assets/image/ 12comentarios.png" alt="Con mi familia nos encanta comer bizcochitos con mate. 
+    ¡ Es nuestro momento compartido de la tarde !" width="200">
+    <img src="../assets/image/11comentarios.png" alt="Mi hija me pide todos los dias sus pepas. ¡Son su preferida!" width="200">
+    <img src="../assets/image/13comentarios.png" alt="Desde hace años que compro sus galletitas, tienen un exquisito sabor y calidad." width="200">
+    </div>
+
+    <button class="boton-contamos" onclick="toggleTexto()">¡Contanos algo!</button>
+
+<div class="modal-fondo" id="modalFondo" onclick="cerrarSiClickAfuera(event)">
+    <div class="modal-cuadro" id="modalCuadro">
+        <span class="cerrar" onclick="toggleTexto()">✕</span>
+        <h4> Puede ser una anécdota, historia o mensaje especial que tengas sobre nuesta marca :)</h4>
+        <textarea placeholder="Escribí tu mensaje acá..."></textarea>
+        <button class="boton-enviar">Enviar</button>
+    </div>
+</div>
+
+    <h3> NOVEDADES</h3>
+    
+    <div class="seccion-principal">
+    <div class="galeria-cuadrada">
+    <div class="fila-superior">
+        <img src="../assets/image/FOTOS_clientes3.png" alt="Foto Materitos">
+        <img src="../assets/image/FOTOS_clientes5.png" alt="Foto Niños felices con las galletitas rosquitas">
+    </div>
+
+    <div class="fila-inferior">
+    <div class="columna-izquierda">
+        <img src="../assets/image/FOTOS_clientes2.png" alt="Chips">
+        <img src="../assets/image/FOTOS_clientes4.png" alt="Anillito">
+    </div>
+
+        <img class="imagen-alta" src="../assets/image/FOTOS_clientes1.png" alt="Pepas y estudio">
+    </div>
+    </div>
+
+    <div class="anuncio-img">
+        <img src="../assets/image/anuncio.png" alt="Anuncio">
+    </div>
+    </div> <!-- este es el cierre de .seccion-principal -->
+    
+</main>
+
+<footer class="footer-general">
+    <p class="footer-texto">
+        © 2025 GOLCI SRL - José Aarón Salmun Feijoo 961/69, Ciudad Autónoma de Buenos Aires | e-mail:<a href="mailto:golci@golci.com.ar">golci@golci.com.ar</a>.
+    </p>
+</footer>
+
+</body>
+</html>
