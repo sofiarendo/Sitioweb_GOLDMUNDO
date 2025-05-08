@@ -2,33 +2,43 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sobre Nosotros</title>
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 <!-- CSS -->
 <link rel="stylesheet" href="../css/style.css">
 
 </head>
-<body class="pagina-historia">
+<!-- ✅ Bootstrap JS (para navbar hamburguesa) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-    <header>
-        <nav>
-        <ul>
-            <li><a href="/index.html">Inicio</a></li>
-            <li><a href="#">Nuestra Historia</a></li>
-            <li><a href="productos.html">Productos</a></li>
-            <li>
-                <a href="/index.html">
-                <img src="/assets/image/logo_galletitas.png" alt="Logo Galletitas Goldmundo" width="200">
-                </a>
-            </li>
-            <li><a href="novedades.html">Novedades</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-            <li>
-                <a href="https://www.instagram.com/galletitasgoldmundo/">
-                <img src="/assets/image/logo_instagram.png" alt="Logo Instagram" width="50">
-                </a>
-            </li>
-        </ul>
-        </nav>
+<!-- ✅ NAVBAR RESPONSIVE CON BOOTSTRAP -->
+<header>
+    <nav class="navbar navbar-expand-lg bg-goldmundo navbar-dark">
+    
+        <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">
+            <img src="../assets/image/logo_galletitas.png" alt="Logo Galletitas Goldmundo" width="120">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse justify-content-between" id="navbarContent">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link active" href="#">Nuestra Historia</a></li>
+            <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+            <li class="nav-item"><a class="nav-link" href="novedades.html">Novedades</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+            </ul>
+            <a href="https://www.instagram.com/galletitasgoldmundo/">
+            <img src="../assets/image/logo_instagram.png" alt="Instagram" width="30">
+            </a>
+        </div>
+        </div>
+    </nav>
     </header>
 
 

@@ -23,6 +23,17 @@ body {
 
 }
 
+/* para cambiar el color que nos da boostrap */
+
+.bg-goldmundo {
+    background-color: rgb(9, 3, 134) ;
+}
+
+.text-goldmundo {
+    color: rgb(9, 3, 134);
+}
+
+
 main {
     flex: 1;  /* Hace que el contenido principal ocupe el espacio disponible */
 }
@@ -49,46 +60,48 @@ main {
     background-attachment: fixed;   
 }
 
-  /* Estilo del encabezado */
-header {
-    background-color: rgb(9, 3, 134);
-    padding: 10px 0;
+  /* Estilo del encabezado me lo da boostrap */
+
+/* Navbar personalizada */
+.navbar {
+padding: 0.3rem 5rem;
 }
 
-  /* Estilo de la lista del menú */
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    padding: 10;
-    margin: 100;
+.navbar-nav {
+gap: 13rem; /* Espacio entre enlaces */
 }
 
-  /* Estilo de los ítems del menú */
-nav ul li {
-    margin: 0 50px;
-    display: flex;
+.navbar-nav .nav-link {
+font-size: 1rem;
+letter-spacing: 0.5px;
+}
+
+.navbar-brand img {
+width: 200px; /* Aumenta el tamaño del logo */
+
+}
+
+.navbar a img {
+margin-left: 1rem; /* Espacio a la izquierda del ícono de Instagram */
+margin-right: 2rem;
+}
+
+
+.navbar-nav {
+    flex-direction: column;
+    gap: 1rem;
     align-items: center;
 }
 
-  /* Estilo de los links del menú */
-nav ul li a {
-    color: white;
-    text-decoration: none; /* Saca el subrayado */
-    font-weight: 300;
-    font-size: 20px;
-    transition: color 0.3s ease;
-    padding: 0;
+.navbar-brand img {
+    width: 120px;
 }
+
 
 nav ul li a:hover {
     font-weight: bold;
 }
-/* Estilo  para la imagen */
-nav ul li img {
-    vertical-align: middle;
-    
-}
+
 
 .contenedor-imagen {
     position: relative;
@@ -102,21 +115,12 @@ nav ul li img {
     padding-top: 0;
 }
 
-.imagen-intermedia {
-    position: absolute;
-    top: 40%; 
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2; /* para que este sobre el fondo pero debajo del texto */
-    opacity: 80%;
-    align-items: center;
-}
 
 .texto-superpuesto {
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    
     color: rgb(11, 3, 176);
     font-size: 40px;
     font-weight: bold;
@@ -124,9 +128,21 @@ nav ul li img {
     text-align: center;
 }
 
+.imagen-intermedia {
+    position: absolute;
+    top: 40%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2; /* para que este sobre el fondo pero debajo del texto */
+    opacity: 60%;
+    align-items: center;
+}
+
+
 .contenedor-contactos{
-    position: relative;
-    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .pepas {
@@ -275,6 +291,7 @@ img {
     padding: 0 300px;         
 }
 
+
 .imagenes-historia img {
     max-width: 100%;
     height: auto;
@@ -401,85 +418,101 @@ img {
 
 /*fotos novedades*/
 
+
+
 .seccion-principal {
+display: flex;
+justify-content: center;
+align-items: flex-start;
+gap: 2rem;
+flex-wrap: wrap;
+padding: 2rem;
+}
+
+/* grid 3x1 */
+
+.imagenes-productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 90%; 
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+.imagenes-productos img {
+    width: 80%;
+    aspect-ratio: 1 / 1; /* Cuadradas */
+    object-fit: cover;
+    border-radius: 10px;
+    align-items: center;    
+}
+
+
+/* Galería en grid 3x2 */
+.galeria-con-anuncio {
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 30px;
-    padding: 40px;
-    margin: auto;
-    height: fit-content;
+    padding: 2rem;
 }
 
-.galeria-cuadrada {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 50%;
-    height: fit-content;
-    
-}
-
-.fila-superior {
-    display: flex;
-    gap: 10px;
-    width: 400;
-    height: fit-content;
-    size-adjust: 30%;
-}
-
-.fila-superior img {
-    flex: 1;
-    height: fit-content;
-    object-fit: cover;
-    border: 3px solid red;
-    border-radius: 10px;
-    width: 50%;
-}
-
-.fila-inferior {
-    display: flex;
-    gap: 10px;
-    width: 100;
-    height: fit-content;
-}
-
-.columna-izquierda {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    flex: 1;
-    width: 100;
-    height: fit-content;
-}
-
-.columna-izquierda img {
-    height:fit-content;
-    object-fit: cover;
-    border: 3px solid red;
-    border-radius: 10px;
-    width: 100;
-}
-
-.imagen-alta {
-    height: fit-content;
-    width: 60%;
-    
-    border: 3px solid red;
-    border-radius: 10px;
-
-}
-
-.anuncio img {
+.galeria-novedades {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    grid-template-areas:
+    "a b e"
+    "c d e";
+    gap: 20px;
     width: 100%;
-    max-width: 300px;
-    height: auto;
-    border-radius: 15px;
-    object-fit: cover;
+    max-width: 1200px;
 }
 
+.item {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 10px;
+    border: 2px solid red;
+    padding: 2px; 
+    object-fit: cover;
+    
+}
+
+.a { grid-column: 1; grid-row:1;}
+.b { grid-column: 2; grid-row: 1;}
+.c { grid-column: 1; grid-row: 2; }
+.d { grid-column: 2; grid-row: 2; }
 
 
+/* Anuncio con mismo tamaño */
+.e {
+    grid-column: 3;
+    grid-row: 1 / span 2; /* ocupa ambas filas */
+width: 700px;
+height: 700px;
+background-color: #002266;
+border-radius: 20px;
+display: flex; 
+align-items: center;
+justify-content: center;
+}
+
+  /* Versión responsive */
+@media (max-width: 768px) {
+    .galeria-novedades {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "a"
+        "b"
+        "c"
+        "d"
+        "e";
+    }
+}
 /* Contenedor del formulario (centra todo) */
 .formulario-container {
     display: flex;
@@ -591,12 +624,106 @@ button:hover {
     white-space: nowrap; /* Evita que se rompa en varias líneas */
 }
 
-.footer-texto a {
+.footer-general {
     color: white;
     text-decoration: underline;
     font-weight: 500;
     word-break: break-word;
 }
+
+/* ===== Media Queries para index.html y nuestra-historia.html ===== */
+
+/* Tablets (ancho entre 768px y 1023px) */
+@media (max-width: 1024px) {
+    h1, h2, h3, p, .parrafo-empresa, .frase-final, .ver-mas a, .ver-catalogo a, .imagenes-historia {
+        padding: 0 100px;
+    }
+
+    .imagenes-productos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .navbar {
+        padding: 0.3rem 2rem;
+    }
+
+    .navbar-nav {
+        gap: 3rem;
+    }
+
+    .texto-superpuesto {
+        font-size: 30px;
+    }
+
+    .texto-contacto {
+        font-size: 40px;
+    }
+
+    .galeria-novedades {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "a b"
+            "c d"
+            "e e";
+    }
+
+    
+}
+
+/* MÃ³viles (menos de 768px) */
+@media (max-width: 767px) {
+    h1, h2, h3, p, .parrafo-empresa, .frase-final, .ver-mas a, .ver-catalogo a {
+        padding: 0 30px;
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    .imagenes-productos {
+        grid-template-columns: 1fr;
+    }
+
+    .imagenes-historia {
+        padding: 0 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenedor-video-imagen {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar {
+        padding: 0.3rem 1rem;
+    }
+
+    .navbar-nav {
+        gap: 1rem;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar-brand img {
+        width: 100px;
+    }
+
+    .texto-superpuesto {
+        font-size: 10px;
+    }
+    
+
+    .footer-texto {
+        padding: 0 7px;
+        font-size: 6px;
+        word-wrap: nowrap;
+    }
+    
+    .footer-general {
+        flex-direction: column;
+        padding: 20px 0;
+    }
+}
+
 
 
 
