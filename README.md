@@ -4,7 +4,7 @@ Desarrollé un sitio web institucional para la marca **Galletitas Goldmundo**. E
 
 ## 🌐 Demo en vivo
 
-[Ver el sitio publicado](https://tu-usuario.github.io/nombre-del-repo/)  
+[Ver el sitio publicado](https://sofiarendo.github.io/git-coder/)  
 
 
 ## 🧭 Páginas incluidas
