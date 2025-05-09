@@ -27,4 +27,4 @@ El diseño se adapta a **escritorio, tablet y móvil**, manteniendo todos los es
 
 ## ✍️ Autor
 
-Realizado por [Tu Nombre](https://github.com/tu-usuario)
+Realizado por [Maria Sofia Rendo](https://github.com/sofiarendo)
