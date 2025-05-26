@@ -171,6 +171,17 @@ video, img {
     width: 90%;
     height: auto;
 }
+
+.galeria-con-anuncio, .galeria-novedades {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "a"
+        "b"
+        "c"
+        "d"
+        "e";
+    }
 }
+
 }
 
