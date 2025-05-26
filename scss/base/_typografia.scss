@@ -1,0 +1,47 @@
+
+h1, h2, h3, .titulo {
+font-family: $fuente-titulo;
+font-weight: bold;
+color: #111;
+padding: 0 20px;
+}
+
+h1 {
+color: #000000;
+font-size: 2em;
+text-align: center;
+margin-top: 50px;
+padding: 0 200px;
+}
+
+h2 {
+color: #000000;
+font-size: 2em;
+text-align: center;
+margin-top: 0px;
+padding: 0 300px;
+margin-bottom: 15px;
+
+}
+
+h3 {
+color: $color-primario;
+font-size: 1.6em;
+text-align: center;
+margin-top: 40px;
+font-weight: bold;
+padding: 0 300px;
+}
+
+p,
+.novedades-texto,
+.parrafo-empresa,
+.frase-final {
+font-size: 20px;
+line-height: 1.6;
+font-weight: 100;
+margin-top: 40px;
+margin-bottom: 20px;
+padding: 0 300px;
+color: #000;
+}

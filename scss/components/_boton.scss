@@ -1,0 +1,75 @@
+
+.boton-contamos {
+@extend %button-base;
+background-color: #090386;
+color: white;
+border-radius: 8px;  // override borde para este botón
+padding: 12px 24px;  // override padding más grande
+margin: 40px auto;
+display: block;
+
+&:hover {
+transform: skew(10deg);
+background-color: $color-secundario;
+}
+}
+
+.boton-enviar {
+@extend %button-base;
+background-color: white;
+color: #090386;
+border-radius: 6px; // usa el radius base definido en el placeholder
+margin-top: 15px;
+padding: 10px 20px;
+}
+
+
+.modal-fondo {
+display: none; /* oculto por defecto */
+position: fixed;
+top: 0; left: 0; right: 0; bottom: 0;
+background: rgba(0, 0, 0, 0.6);
+justify-content: center;
+align-items: center;
+}
+
+.modal-fondo.visible {
+display: flex; /* mostrar como flexbox para centrar */
+}
+
+.modal-cuadro {
+background: white;
+padding: 20px;
+border-radius: 8px;
+max-width: 400px;
+width: 90%;
+position: relative;
+@include fadeIn;
+}
+
+
+.cerrar {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+}
+
+
+textarea {
+    width: 100%;
+    height: 120px;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    resize: none;
+    font-family: $fuente-general;
+    font-size: 14px;
+}
+
+
+
+
+

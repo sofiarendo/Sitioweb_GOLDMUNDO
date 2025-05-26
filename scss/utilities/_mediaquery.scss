@@ -1,0 +1,151 @@
+
+        /* =========================
+    Media Queries
+    ========================= */
+
+    /* === General / Global === */
+
+    @media (max-width: 1024px) {
+    h1, h2, p, .parrafo-empresa, .frase-final, .ver-mas a, .ver-catalogo a {
+        padding: 0 100px;
+    }
+
+    h3 {
+        font-size: 1.0em;
+        position: absolute;
+        left: -20%;
+        transform: translateY(-50%);
+        font-weight: bold;
+        z-index: 3;
+        text-align: center;
+
+    }
+    .imagenes-productos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .navbar {
+        padding: 0.3rem 2rem;
+    }
+    .navbar-nav {
+        gap: 3rem;
+    }
+
+    
+    
+.textosuperpuesto, .texto-contacto {
+position: absolute;
+left: 50%;
+transform: translateX(-50%);
+font-weight: bold;
+z-index: 3;
+text-align: center;
+
+}
+    .texto-contacto {
+        font-size: 40px;
+    }
+    .galeria-novedades {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+        "a b"
+        "c d"
+        "e e";
+    }
+    }
+
+    /* === Mobile Devices (menos de 768px) === */
+
+    @media (max-width: 767px) {
+    
+    h1, h2, p, .parrafo-empresa, .frase-final, .ver-mas a, .ver-catalogo a {
+        padding: 0 30px;
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+    .textosuperpuesto, h3 {
+        font-size: 0.3em;
+        position: absolute;
+        left: -80%;
+        transform: translateY(-80%);
+        font-weight: bold;
+        z-index: 3;
+        text-align: center;
+
+    }
+    .imagenes-productos {
+        grid-template-columns: 1fr;
+    }
+
+    .imagenes-historia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    position: relative;
+    width: auto;
+    }
+
+    .contenedor-video-imagen {
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    .navbar {
+        padding: 0.3rem 1rem;
+    }
+
+    .navbar-nav {
+        gap: 1rem;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar-brand img {
+        width: 100px;
+    }
+    
+
+    .textosuperpuesto,.texto-contacto {
+        font-size: 20px;
+        line-height: 1.4;
+        text-align: center;
+        width: 90%;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .footer-general {
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+
+    .footer-texto {
+        font-size: 12px;
+        line-height: 1.8;
+        white-space: normal;
+        overflow-wrap: break-word;
+        word-break: break-word;
+        padding: 0 5px;
+        text-align: center;
+        color: white;
+    }
+
+    .galeria-novedades {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "a"
+        "b"
+        "c"
+        "d"
+        "e";
+    }
+    
+    }
+
+

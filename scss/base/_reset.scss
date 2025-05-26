@@ -1,0 +1,21 @@
+/* Elimina márgenes inesperados */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+html, body {
+width: 100%;
+overflow-x: hidden;
+}
+
+/* Fondo azul del navbar */
+.bg-goldmundo {
+background-color: #2300cc; /* o tu color exacto */
+}
+
+/* Asegura que el nav tenga ancho completo */
+.navbar {
+width: 100%;
+}

@@ -1,0 +1,176 @@
+
+@import "./utilities/mixin";
+
+
+@import "./base/reset";
+@import "./base/variables"; 
+@import "./base/typografia";
+
+@import "./utilities/extend";
+@import "./utilities/mediaquery";
+
+@import "./components/navbar";
+@import "./components/footer";
+@import "./components/boton";
+@import "./components/textos";
+
+
+
+
+body {
+font-family: $fuente-general;
+font-weight: 500;
+color: #000;
+background-color: #ffffff;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+}
+
+main {
+flex: 1;
+display: flex;
+flex-direction: column;
+gap: 2rem;
+padding: 2rem;
+}
+
+.container-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 1.5rem;
+}
+
+.flex-center {
+@extend %centered;
+}
+
+.pagina-historia,
+.pagina-productos,
+.pagina-novedades {
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+
+&.pagina-historia {
+background-image: url('../assets/image/fondoarg.png');
+}
+
+&.pagina-productos {
+background-image: url('../assets/image/fondo_celesteyblanco.png');
+}
+
+&.pagina-novedades {
+background-image: url('../assets/image/fondo_mitad.png');
+background-attachment: fixed;
+}
+}
+
+
+.contenedor-imagen,
+.contenedor-contactos,
+.imagen-intermedia{
+position: relative;
+display: inline-block;
+position: relative;
+width: auto;
+}
+
+.fondo,
+.pepas {
+display: block;
+margin-top: 0;
+padding-top: 0;
+width: 100%;
+opacity: 40%;
+
+}
+
+
+.contenedor-imagen {
+    position: relative;
+    display: inline-block;
+    
+}
+
+
+
+
+.imagen-intermedia {
+    position: absolute;
+    top: 40%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2; /* para que este sobre el fondo pero debajo del texto */
+    opacity: 60%;
+    align-items: center;
+}
+.img-chips {
+max-width: 100%;
+height: auto;
+display: block;
+margin: 20px auto;
+border-radius: 8px;
+margin-bottom: 30px;
+
+}
+
+img {
+max-width: 100%;
+height: auto;
+display: block;
+margin: 20px auto;
+border-radius: 8px;
+margin-bottom: 30px;
+
+}
+
+.imagenes-productos,
+.imagenes-historia {
+@extend %centered;
+flex-wrap: wrap;
+gap: 5px;
+margin-top: 30px;
+padding: 0 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    width: auto;
+}
+
+
+
+.imagenes-historia img {
+width: 400px;
+}
+
+.contenedor-video-imagen {
+display: flex;
+gap: 20px;
+flex-wrap: wrap;
+max-width: 1200px;
+margin: 0 auto;
+
+.imagenes-historia img,
+.imagenes-historia video {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+.video, .imagen {
+flex: 1;
+max-width: 48%;
+justify-content: center;
+align-items: center;
+
+video, img {
+    display: block;
+    width: 90%;
+    height: auto;
+}
+}
+}
+

@@ -1,0 +1,45 @@
+// Variables
+$color-primario: #27079b;
+$color-secundario:  #e8ca84;
+$fuente-general: 'Nunito', sans-serif;
+$fuente-titulo: 'futura-pt', sans-serif;
+
+
+html, body {
+width: 100%;
+height: 100%;
+margin: 0;
+padding: 0;
+}
+
+// Clase de fondo personalizada
+.bg-goldmundo {
+background-color: #2300cc; // o el color que estés usando
+width: 100vw;
+}
+
+// Navbar general (opcional para asegurar full ancho)
+nav.navbar {
+width: 100vw;
+position: relative;
+left: 0;
+}
+
+    body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* que ocupe toda la pantalla */
+    }
+
+    main {
+    flex: 1; /* para que el main ocupe todo el espacio restante */
+    }
+
+    /* footer sigue normal */
+    .footer-general {
+    background-color: #090386;
+    padding: 15px 20px;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    }

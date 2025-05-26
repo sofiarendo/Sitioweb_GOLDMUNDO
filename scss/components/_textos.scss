@@ -1,0 +1,22 @@
+
+    .texto-superpuesto {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    color:$color-primario;
+    font-size: 40px;
+    font-weight: bold;
+    z-index: 3; /* Asegura que el texto esté arriba de todo */
+    text-align: center;
+}
+
+    .titulonovedades  {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+    text-align: center;
+    color: $color-primario;
+    font-size: 40px;
+    }
