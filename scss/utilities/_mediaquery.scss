@@ -136,7 +136,7 @@ text-align: center;
         color: white;
     }
 
-    .galeria-novedades {
+    .galeria-con-anuncio, .galeria-novedades {
         grid-template-columns: 1fr;
         grid-template-areas:
         "a"
