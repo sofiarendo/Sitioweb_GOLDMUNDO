@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @charset "UTF-8";
 /* Elimina márgenes inesperados */
 * {
@@ -620,3 +621,734 @@ img {
 }
 
 /*# sourceMappingURL=style.css.map */
+=======
+/* Reset de CSS */ 
+
+* {
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+/* Cambiar color de fondo del body */
+/* Fuente general del sitio: Nunito */
+body {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+    color: #000000;
+    margin: 0;
+    background-color: #fafbfb;
+    min-height: 100vh;  /* Garantiza que el body ocupe al menos toda la altura de la pantalla */
+    display: flex;
+    flex-direction: column;  /* Coloca los elementos uno debajo del otro */
+    height: 100%;
+
+}
+
+/* para cambiar el color que nos da boostrap */
+
+.bg-goldmundo {
+    background-color: rgb(9, 3, 134) ;
+}
+
+.text-goldmundo {
+    color: rgb(9, 3, 134);
+}
+
+
+main {
+    flex: 1;  /* Hace que el contenido principal ocupe el espacio disponible */
+}
+.pagina-historia {
+   background-image: url('../assets/image/fondoarg.png'); /* Ruta de la imagen */
+   background-size: cover;         /* La imagen cubre todo el fondo */
+   background-repeat: no-repeat;   /* No se repite */
+   background-position: center;    /* Centrada */  
+}
+
+.pagina-productos {
+    background-image: url('../assets/image/fondo_celesteyblanco.png'); /* Ruta de la imagen */
+    background-size: cover;         
+    background-repeat: no-repeat;   
+    background-position: center;    
+    
+}
+
+.pagina-novedades {
+    background-image: url('../assets/image/fondo_mitad.png'); 
+    background-size: cover;         
+    background-repeat: no-repeat;   
+    background-position: center;    
+    background-attachment: fixed;   
+}
+
+  /* Estilo del encabezado me lo da boostrap */
+
+/* Navbar personalizada */
+.navbar {
+padding: 0.3rem 5rem;
+}
+
+.navbar-nav {
+gap: 13rem; /* Espacio entre enlaces */
+}
+
+.navbar-nav .nav-link {
+font-size: 1rem;
+letter-spacing: 0.5px;
+}
+
+.navbar-brand img {
+width: 200px; /* Aumenta el tamaño del logo */
+
+}
+
+.navbar a img {
+margin-left: 1rem; /* Espacio a la izquierda del ícono de Instagram */
+margin-right: 2rem;
+}
+
+
+.navbar-nav {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.navbar-brand img {
+    width: 120px;
+}
+
+
+nav ul li a:hover {
+    font-weight: bold;
+}
+
+
+.contenedor-imagen {
+    position: relative;
+    display: inline-block;
+    
+}
+
+.fondo {
+    display: block;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+
+.texto-superpuesto {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    
+    color: rgb(11, 3, 176);
+    font-size: 40px;
+    font-weight: bold;
+    z-index: 3; /* Asegura que el texto esté arriba de todo */
+    text-align: center;
+}
+
+.imagen-intermedia {
+    position: absolute;
+    top: 40%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2; /* para que este sobre el fondo pero debajo del texto */
+    opacity: 60%;
+    align-items: center;
+}
+
+
+.contenedor-contactos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.pepas {
+    display: block;
+    margin-top: 0;
+    padding-top: 0;
+    width: 100%;
+    opacity: 40%;
+}
+
+.texto-contacto {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 50px;
+    font-weight: bold;
+    z-index: 3; /* Asegura que el texto esté arriba de todo */
+    text-align: center;
+    
+}
+
+  /* Encabezados */
+/* Títulos con Futura */
+h1, h2, h3, .titulo {
+    font-family: 'futura-pt', sans-serif;
+    font-weight: bold;
+    color: #111;
+    padding: 0 20px; /* 20px a izquierda y derecha */
+}
+
+h1 {
+    color: #000000;
+    font-size: 2em;
+    text-align: left;
+    margin-top: 50px;
+    padding: 0 200px; /* 200px a izquierda y derecha */
+}
+
+h2 {
+    color: #000000;
+    font-size: 2em;
+    text-align: center;
+    margin-top: 40px;
+    padding: 0 300px; /* 300px a izquierda y derecha */
+}
+
+h3 { 
+    color:  rgb(11, 3, 176);
+    font-size: 3em;
+    text-align: center;
+    margin-top: 40px;
+    font-weight: bold;
+    padding: 0 300px; /* 300px a izquierda y derecha */
+}
+/* Estilo estándar para todos los párrafos */
+p {
+    margin-top: 40px ;
+    font-size: 20px;
+    line-height: 1.6;
+    color: #000000;
+    font-weight: 100;
+    margin-bottom: 20px; /* Espacio entre párrafo y la frase final */
+    padding: 0 300px; /* 300px a izquierda y derecha */
+}
+
+.novedades-texto { 
+    margin-top: 40px ;
+    font-size: 20px;
+    line-height: 1.6;
+    color: #000000;
+    font-weight: 100;
+    margin-bottom: 20px; /* Espacio entre párrafo y la frase final */
+    padding: 0 300px; /* 300px a izquierda y derecha */
+    text-align: center;
+}
+  /* Párrafos */
+.parrafo-empresa {
+    margin-top: 40px ;
+    font-size: 20px;
+    line-height: 1.6;
+    color: #000000;
+    font-weight: 100;
+    margin-bottom: 20px; /* Espacio entre párrafo y la frase final */
+    padding: 0 300px; /* 300px a izquierda y derecha */
+}
+
+.frase-final {
+    font-weight: bold;
+    font-size: 20px;
+    color: #111;
+    /* Opcionales */
+    text-align: left; 
+    letter-spacing: 1px;
+    margin-bottom: 20px ;
+    padding: 0 300px; /* 300px a izquierda y derecha */
+}
+
+/* Estilo para el contenedor del enlace */
+.ver-mas {
+    text-align: right; 
+    margin-top: 20px;  
+}
+
+/* Estilo para el enlace "VER MÁS" */
+.ver-mas a {
+    text-decoration: underline; 
+    color: rgb(3, 3, 140); 
+    font-weight: 100; 
+    font-size: 12px; 
+    padding: 0 300px; 
+}
+
+.ver-catalogo {
+    text-align: right; 
+    margin-top: 20px;  }
+
+/* Estilo para el enlace "VER CATALOGO" */
+.ver-catalogo a {
+    text-decoration: underline; 
+    color: rgb(3, 3, 140); 
+    font-weight: 100; 
+    font-size: 12px; 
+    padding: 0 300px; 
+}
+
+  /* Imagenes */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+    gap: 5px;
+    margin-bottom: 30px;
+}
+
+.imagenes-productos {
+    display: flex;              
+    justify-content: center;    /* Centra las imágenes horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    gap: 5 px;                  /* Espacio entre imágenes */
+    flex-wrap: wrap;            
+    margin-top: 30px;  
+    padding: 0 300px;         
+}
+
+
+.imagenes-historia img {
+    max-width: 100%;
+    height: auto;
+    width: 250px;               
+}
+
+.imagenes-historia {
+    display: flex;              
+    justify-content: center;    
+    gap: 10px;                  
+    flex-wrap: wrap;            
+    margin-top: 30px;  
+    padding: 0 300px; 
+}
+
+.imagenes-historia img {
+    max-width: 100%;
+    height: auto;
+    width: 400px;               
+}
+
+.contenedor-video-imagen {
+    display: flex;
+    gap: 20px; 
+    flex-wrap: wrap; /* ajuste para pantallas más pequeñas */
+    max-width: 1200px; 
+    margin: 0 auto; /* Centra el contenedor */
+}
+
+.video, .imagen {
+    flex: 1; /* Ambos elementos ocuparán un espacio igual */
+    max-width: 48%; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.video video, .imagen img {
+    display: block; /* no tengan espacios debajo */
+    width: 90%; /*  ocupen todo el espacio disponible */
+    height: auto;
+    
+}
+.boton-contamos {
+    background-color: #090386;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 40px auto;
+    display: block;
+}
+
+.modal-fondo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5); 
+    display: none; /* Oculto por defecto */
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.modal-cuadro {
+    background-color: #090386;
+    color: white;
+    padding: 30px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    font-family: 'Nunito', sans-serif;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.modal-cuadro h2 {
+    margin-top: 0;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.modal-cuadro textarea {
+    width: 100%;
+    height: 120px;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    resize: none;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+}
+
+.boton-enviar {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: white;
+    color: #090386;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.cerrar {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+}
+
+/* Animación */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+/*fotos novedades*/
+
+
+
+.seccion-principal {
+display: flex;
+justify-content: center;
+align-items: flex-start;
+gap: 2rem;
+flex-wrap: wrap;
+padding: 2rem;
+}
+
+/* grid 3x1 */
+
+.imagenes-productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 90%; 
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+.imagenes-productos img {
+    width: 80%;
+    aspect-ratio: 1 / 1; /* Cuadradas */
+    object-fit: cover;
+    border-radius: 10px;
+    align-items: center;    
+}
+
+
+/* Galería en grid 3x2 */
+.galeria-con-anuncio {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.galeria-novedades {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    grid-template-areas:
+    "a b e"
+    "c d e";
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.item {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 10px;
+    border: 2px solid red;
+    padding: 2px; 
+    object-fit: cover;
+    
+}
+
+.a { grid-column: 1; grid-row:1;}
+.b { grid-column: 2; grid-row: 1;}
+.c { grid-column: 1; grid-row: 2; }
+.d { grid-column: 2; grid-row: 2; }
+
+
+/* Anuncio con mismo tamaño */
+.e {
+    grid-column: 3;
+    grid-row: 1 / span 2; /* ocupa ambas filas */
+width: 700px;
+height: 700px;
+background-color: #002266;
+border-radius: 20px;
+display: flex; 
+align-items: center;
+justify-content: center;
+}
+
+  /* Versión responsive */
+@media (max-width: 768px) {
+    .galeria-novedades {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "a"
+        "b"
+        "c"
+        "d"
+        "e";
+    }
+}
+/* Contenedor del formulario (centra todo) */
+.formulario-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* ocupa casi toda la altura de la pantalla */
+}
+
+/* Formulario en sí */
+.formulario-contacto {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Inputs y textarea */
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Botón */
+button {
+    background-color: #004080;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #003366;
+}
+
+  /* Footer */
+
+.footer-inicio {
+    position: relative;
+    
+    overflow: hidden;
+}
+
+.footer-img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.footer-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* hace que la imagen cubra bien el contenedor */
+    
+}
+
+.footer-texto {
+    position: absolute;
+    bottom: 20px; /* distancia desde abajo */
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap; /* Evita que se rompa en varias líneas */
+    
+}
+
+.footer-texto a {
+    color: white;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.footer-general {
+    background-color: #090386;
+    padding: 40px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Asegura que el contenido del footer quede bien alineado */
+}
+
+.footer-texto {
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    padding: 0 20px;
+    max-width: 1200px;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 1.5;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: unset;
+    z-index: 1; /* Asegura que el texto esté sobre el fondo */
+    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
+    white-space: nowrap; /* Evita que se rompa en varias líneas */
+}
+
+.footer-general {
+    color: white;
+    text-decoration: underline;
+    font-weight: 500;
+    word-break: break-word;
+}
+
+/* ===== Media Queries para index.html y nuestra-historia.html ===== */
+
+/* Tablets (ancho entre 768px y 1023px) */
+@media (max-width: 1024px) {
+    h1, h2, h3, p, .parrafo-empresa, .frase-final, .ver-mas a, .ver-catalogo a, .imagenes-historia {
+        padding: 0 100px;
+    }
+
+    .imagenes-productos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .navbar {
+        padding: 0.3rem 2rem;
+    }
+
+    .navbar-nav {
+        gap: 3rem;
+    }
+
+    .texto-superpuesto {
+        font-size: 30px;
+    }
+
+    .texto-contacto {
+        font-size: 40px;
+    }
+
+    .galeria-novedades {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "a b"
+            "c d"
+            "e e";
+    }
+
+    
+}
+
+/* MÃ³viles (menos de 768px) */
+@media (max-width: 767px) {
+    h1, h2, h3, p, .parrafo-empresa, .frase-final, .ver-mas a, .ver-catalogo a {
+        padding: 0 30px;
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    .imagenes-productos {
+        grid-template-columns: 1fr;
+    }
+
+    .imagenes-historia {
+        padding: 0 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenedor-video-imagen {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar {
+        padding: 0.3rem 1rem;
+    }
+
+    .navbar-nav {
+        gap: 1rem;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar-brand img {
+        width: 100px;
+    }
+
+    .texto-superpuesto {
+        font-size: 10px;
+    }
+    
+
+    .footer-texto {
+        padding: 0 7px;
+        font-size: 6px;
+        word-wrap: nowrap;
+    }
+    
+    .footer-general {
+        flex-direction: column;
+        padding: 20px 0;
+    }
+}
+
+
+
+
+>>>>>>> a714e3774a450f0a7a67ffffe882c181b842fdd8
