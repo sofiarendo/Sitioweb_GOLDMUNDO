@@ -4,7 +4,7 @@ Desarrollé un sitio web institucional para la marca **Galletitas Goldmundo**. E
 
 ## 🌐 Demo en vivo
 
-[Ver el sitio publicado](https://sofiarendo.github.io/entrega_2/)  
+[Ver el sitio publicado](https://sofiarendo.github.io/Sitioweb_GOLDMUNDO/)  
 
 
 ## 🧭 Páginas incluidas
@@ -18,12 +18,12 @@ Desarrollé un sitio web institucional para la marca **Galletitas Goldmundo**. E
 ## 🛠️ Tecnologías utilizadas
 
 - HTML5
-- CSS3 (con diseño **responsive** usando media queries)
+- CSS y SCSS (con diseño **responsive** usando media queries)
 - Bootstrap (solo para estructura de navegación)
 
 ## 📱 Responsive
 
-El diseño se adapta a **escritorio, tablet y móvil**, manteniendo todos los estilos actuales. Las páginas `index.html` y `nuestra-historia.html` tienen media queries personalizadas para garantizar la mejor experiencia en todos los dispositivos.
+El diseño se adapta a **escritorio, tablet y móvil**, manteniendo todos los estilos actuales. 
 
 ## ✍️ Autor
 
