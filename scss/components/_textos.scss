@@ -1,13 +1,16 @@
+.texto-superpuesto {
+position: absolute;
+top: 50%;           /* centro vertical */
+left: 50%;          /* centro horizontal */
+transform: translate(-50%, -50%);
+max-width: 80%;     /* que no sea demasiado ancho */
+padding: 0 1rem;    /* espacio lateral */
+color: white;
+text-align: center;
+background: rgba(0, 0, 0, 0.4); /* opcional: fondo semitransparente para mejorar legibilidad */
+border-radius: 10px;
 
-    .texto-superpuesto {
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    color:$color-primario;
-    font-size: 40px;
-    font-weight: bold;
-    z-index: 3; /* Asegura que el texto esté arriba de todo */
-    text-align: center;
+
 }
 
     .titulonovedades  {

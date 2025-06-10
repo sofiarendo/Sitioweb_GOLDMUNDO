@@ -35,6 +35,24 @@ gap: 2rem;
 padding: 2rem;
 }
 
+.galeria-novedades {
+display: grid;
+gap: 20px;
+padding: 40px;
+grid-template-columns: repeat(2, 1fr); /* 2 columnas iguales */
+grid-auto-rows: 250px; /* altura fija para cada fila */
+}
+
+.galeria-novedades img {
+width: 100%;
+height: 100%; /* que llene toda la celda */
+object-fit: cover; /* recorta si hace falta */
+border-radius: 12px;
+display: block;
+}
+
+
+
 .container-grid {
 display: grid;
 grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -172,16 +190,5 @@ video, img {
     height: auto;
 }
 
-.galeria-con-anuncio, .galeria-novedades {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-        "a"
-        "b"
-        "c"
-        "d"
-        "e";
-    }
-}
 
-}
-
+}}

@@ -1,151 +1,214 @@
 
-        /* =========================
-    Media Queries
-    ========================= */
+/* =========== Media Queries Optimized =========== */
 
-    /* === General / Global === */
+/* Prevenir scroll horizontal global */
+body {
+overflow-x: hidden;
+}
 
-    @media (max-width: 1024px) {
-    h1, h2, p, .parrafo-empresa, .frase-final, .ver-mas a, .ver-catalogo a {
-        padding: 0 100px;
-    }
+.galeria-novedades {
+display: grid;
+gap: 20px;
+padding: 40px;
 
-    h3 {
-        font-size: 1.0em;
-        position: absolute;
-        left: -20%;
-        transform: translateY(-50%);
-        font-weight: bold;
-        z-index: 3;
-        text-align: center;
+/* móvil - 1 columna */
+grid-template-columns: 1fr;
+grid-auto-rows: 200px;
+}
 
-    }
-    .imagenes-productos {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .navbar {
-        padding: 0.3rem 2rem;
-    }
-    .navbar-nav {
-        gap: 3rem;
-    }
+.galeria-novedades img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+border-radius: 12px;
+display: block;
+}
 
-    
-    
-.textosuperpuesto, .texto-contacto {
+
+
+/* ===== Móvil (≤767px) ===== */
+@media (max-width: 767px) {
+h1, h2, p, .parrafo-empresa, .frase-final, .ver-mas a, .ver-catalogo a {
+padding: 0 1rem;
+font-size: 1.4rem;
+text-align: center;
+}
+
+h1 {
+font-size: 2rem;
+}
+
+h3 {
+font-size: 1rem;
+position: relative;
+text-align: center;
+transform: none;
+left: auto;
+margin: 1rem auto;
+max-width: 90%;
+}
+
+/* Grid de productos a 1 columna */
+.imagenes-productos,
+.galeria-con-anuncio,
+.galeria-novedades {
+display: grid;
+grid-template-columns: 1fr !important;
+grid-template-rows: auto;
+gap: 1rem;
+}
+
+.galeria-novedades {
+grid-template-columns: repeat(2, 1fr);
+grid-auto-rows: 250px;
+}
+
+/* Prevención de overflow en novedades */
+.galeria-novedades,
+.galeria-con-anuncio {
+max-width: 100%;
+overflow-x: hidden;
+padding: 0 1rem; /* Margin interno para evitar que toquen los bordes */
+}
+
+.galeria-novedades div,
+.galeria-con-anuncio div {
+box-sizing: border-box;
+}
+
+.galeria-novedades img {
+width: 100%;
+height: auto;
+display: block;
+}
+
+/* Imágenes en historia como flex column */
+.imagenes-historia,
+.contenedor-video-imagen {
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0;
+width: 100%;
+}
+
+/* Navbar responsive */
+.navbar {
+padding: 0.5rem 1rem;
+}
+
+.navbar-nav {
+flex-direction: column;
+gap: 1rem;
+text-align: center;
+}
+
+.navbar-brand img {
+width: 80px;
+}
+
+/* Textos superpuestos en contacto */
+.textosuperpuesto,
+.texto-contacto {
+font-size: 1.2rem;
+top: 60%;
+transform: translate(-50%, -50%);
+}
+
+/* Footer en móvil */
+.footer-general {
+padding: 1rem;
+font-size: 0.9rem;
+}
+
+.footer-texto {
+font-size: 0.9rem;
+line-height: 1.6;
+text-align: center;
+padding: 0 0.5rem;
+}
+
+.texto-superpuesto h3 {
+    font-size: 1.2rem;
+}
+
+
+/* ===== Tablet (≤1024px) ===== */
+@media (max-width: 1024px) {
+/* Espaciado horizontal en textos */
+h1, h2, p, .parrafo-empresa, .frase-final, .ver-mas a, .ver-catalogo a {
+padding: 0 2rem;
+text-align: center;
+}
+
+/* Títulos H3 centrados en grid */
+h3 {
+font-size: 1.2rem;
+position: relative;
+left: auto;
+transform: none;
+text-align: center;
+margin: 0 auto;
+max-width: 90%;
+}
+
+/* Grid de productos */
+.imagenes-productos {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 1rem;
+}
+
+/* Navbar */
+.navbar {
+padding: 0.5rem 2rem;
+}
+
+.navbar-nav {
+gap: 2rem;
+}
+
+/* Textos superpuestos */
+.textosuperpuesto,
+.texto-contacto {
 position: absolute;
 left: 50%;
 transform: translateX(-50%);
-font-weight: bold;
-z-index: 3;
+width: 90%;
 text-align: center;
-
 }
-    .texto-contacto {
-        font-size: 40px;
-    }
-    .galeria-novedades {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas:
-        "a b"
-        "c d"
-        "e e";
-    }
-    }
 
-    /* === Mobile Devices (menos de 768px) === */
+/* Galería novedades con 2 columnas */
+.galeria-novedades {
+grid-template-columns: repeat(2, 1fr);
+grid-auto-rows: 250px;
+}
 
-    @media (max-width: 767px) {
-    
-    h1, h2, p, .parrafo-empresa, .frase-final, .ver-mas a, .ver-catalogo a {
-        padding: 0 30px;
-        font-size: 1.5em;
-        text-align: center;
-    }
+/* Ajustes texto superpuesto tablet */
+.texto-superpuesto {
+max-width: 350px;
+h3 {
+    font-size: 1.6rem;
+    line-height: 1.3;
+}
+}
+}
 
-    h1 {
-        font-size: 2em;
-    }
-    .textosuperpuesto, h3 {
-        font-size: 0.3em;
-        position: absolute;
-        left: -80%;
-        transform: translateY(-80%);
-        font-weight: bold;
-        z-index: 3;
-        text-align: center;
+/* ===== Desktop grande (≥1200px) ===== */
+@media (min-width: 1200px) {
+.galeria-novedades {
+/* desktop grande - 3 columnas */
+grid-template-columns: repeat(3, 1fr);
+grid-auto-rows: 250px; /* podés ajustar a 300px si querés */
+}
 
-    }
-    .imagenes-productos {
-        grid-template-columns: 1fr;
-    }
-
-    .imagenes-historia {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-    position: relative;
-    width: auto;
-    }
-
-    .contenedor-video-imagen {
-        flex-direction: column;
-        align-items: center;
-        position: relative;
-    }
-
-    .navbar {
-        padding: 0.3rem 1rem;
-    }
-
-    .navbar-nav {
-        gap: 1rem;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .navbar-brand img {
-        width: 100px;
-    }
-    
-
-    .textosuperpuesto,.texto-contacto {
-        font-size: 20px;
-        line-height: 1.4;
-        text-align: center;
-        width: 90%;
-        top: 60%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    .footer-general {
-        padding: 10px 15px;
-        font-size: 12px;
-    }
-
-    .footer-texto {
-        font-size: 12px;
-        line-height: 1.8;
-        white-space: normal;
-        overflow-wrap: break-word;
-        word-break: break-word;
-        padding: 0 5px;
-        text-align: center;
-        color: white;
-    }
-
-    .galeria-con-anuncio, .galeria-novedades {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-        "a"
-        "b"
-        "c"
-        "d"
-        "e";
-    }
-    
-    }
-
-
+/* Ajustes texto superpuesto desktop */
+.texto-superpuesto {
+max-width: 450px;
+h3 {
+    font-size: 2.5rem;
+    line-height: 1.1;
+}
+}
+}
+}
