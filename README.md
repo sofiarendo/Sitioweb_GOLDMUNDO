@@ -2,9 +2,9 @@
 
 Desarrollé un sitio web institucional para la marca **Galletitas Goldmundo**. El sitio refleja los valores de la marca, su historia, productos y novedades, buscando conectar con el público de manera cercana y visualmente atractiva.
 
-## 🌐 Demo en vivo
+## 🌐 Demo en vivo (🔗 Sitio publicado en Netlify) 
 
-[Ver el sitio publicado](https://sofiarendo.github.io/Sitioweb_GOLDMUNDO/)  
+[Ver el sitio publicado](https://galletitas-goldmundo.netlify.app/)  
 
 
 ## 🧭 Páginas incluidas
