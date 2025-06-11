@@ -1,30 +1,46 @@
-# Sitio Web - Galletitas Goldmundo
+# 🌟 Sitio Web - Galletitas Goldmundo
 
-Desarrollé un sitio web institucional para la marca **Galletitas Goldmundo**. El sitio refleja los valores de la marca, su historia, productos y novedades, buscando conectar con el público de manera cercana y visualmente atractiva.
+Sitio web institucional desarrollado para la marca **Galletitas Goldmundo**, reflejando su historia, productos y valores con un diseño moderno, responsive y enfocado en el usuario.
 
 ## 🌐 Demo en vivo
 
-[Ver el sitio publicado](https://sofiarendo.github.io/Sitioweb_GOLDMUNDO/)  
-
+🔗 [Ver sitio publicado en Netlify](https://galletitas-goldmundo.netlify.app)  
+📂 [Ver código fuente en GitHub](https://github.com/sofiarendo/Sitioweb_GOLDMUNDO)
 
 ## 🧭 Páginas incluidas
 
-- `index.html`: Página principal con introducción a la marca.
-- `nuestra-historia.html`: Historia y valores de Goldmundo.
+- `index.html`: Página principal con presentación general.
+- `nuestra-historia.html`: Historia y valores de la marca.
 - `productos.html`: Catálogo de productos.
-- `novedades.html`: Noticias y novedades de la marca.
-- `contacto.html`: Formulario de contacto.
+- `novedades.html`: Noticias y novedades.
+- `contacto.html`: Formulario de contacto funcional.
 
 ## 🛠️ Tecnologías utilizadas
 
-- HTML5
-- CSS y SCSS (con diseño **responsive** usando media queries)
-- Bootstrap (solo para estructura de navegación)
+- HTML5 semántico
+- SCSS (SASS) con estructura modular
+- CSS3 con diseño responsive
+- Bootstrap (estructura de navegación)
+- Media queries personalizadas
+- Animaciones CSS
+- SEO básico aplicado
 
-## 📱 Responsive
+## 📱 Diseño responsive
 
-El diseño se adapta a **escritorio, tablet y móvil**, manteniendo todos los estilos actuales. 
+Adaptado completamente para **escritorio, tablet y móviles**, sin `overflow-x` y con navegación intuitiva. Maquetado con **flexbox**, **grid** y **box modeling**.
+
+## 🔍 SEO y Accesibilidad
+
+- Uso de etiquetas HTML semánticas
+- Etiquetas `alt` en imágenes
+- Meta etiquetas 
+- Nombres de clases y estructura organizadas para legibilidad
+
+## 🚀 Deploy
+
+El sitio fue deployado con **Netlify**, asegurando acceso público y rendimiento óptimo.
 
 ## ✍️ Autor
 
-Realizado por [Maria Sofia Rendo](https://github.com/sofiarendo)
+Realizado por [María Sofía Rendo](https://github.com/sofiarendo)  
+📧 Proyecto final para el curso de Desarrollo Web
