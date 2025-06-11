@@ -69,6 +69,13 @@ textarea {
     font-size: 14px;
 }
 
+a.ver-mas, a.ver-catalogo {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    &:hover {
+    background-color: lighten($primary, 10%);
+    transform: translateY(-3px);
+    }
+}
 
 
 
